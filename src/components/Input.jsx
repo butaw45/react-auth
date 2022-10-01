@@ -12,6 +12,7 @@ export default function Input({
       type={type}
       id={name}
       placeholder={placeholder}
+      {...register(name, { required, validate })}
     />
   );
 }
